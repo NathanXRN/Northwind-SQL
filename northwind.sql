@@ -2,20 +2,24 @@
 -- PostgreSQL database dump
 --
 
-SET statement_timeout           = 0;
-SET lock_time_out               = 0;
-SET client_encoding             = 'UTF8';
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
-SET check_function_bodies       = false;
-SET client_min_messages         = warning;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+
 
 SET default_tablespace = '';
-SET deafult_with_oids  = false;
+
+SET default_with_oids = false;
 
 
 ---
 --- drop tables
 ---
+
 
 DROP TABLE IF EXISTS customer_customer_demo;
 DROP TABLE IF EXISTS customer_demographics;
@@ -33,7 +37,7 @@ DROP TABLE IF EXISTS region;
 DROP TABLE IF EXISTS employees;
 
 --
--- Name: categories; Type: TABLE; Schema: public: -; Tablespace:
+-- Name: categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE categories (
@@ -42,6 +46,7 @@ CREATE TABLE categories (
     description text,
     picture bytea
 );
+
 
 --
 -- Name: customer_customer_demo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
@@ -3683,6 +3688,7 @@ INSERT INTO us_states VALUES (48, 'Washington', 'WA', 'west');
 INSERT INTO us_states VALUES (49, 'West Virginia', 'WV', 'south');
 INSERT INTO us_states VALUES (50, 'Wisconsin', 'WI', 'midwest');
 INSERT INTO us_states VALUES (51, 'Wyoming', 'WY', 'west');
+
 
 --
 -- Name: pk_categories; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
