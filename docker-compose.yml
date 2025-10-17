@@ -9,7 +9,7 @@ services:
       POSTGRES_USER    : postgres
       POSTGRES_PASSWORD: postgres
     volumes:
-      - posthresql_bin:/usr/lib/postgresql
+      - postgresql_bin:/usr/lib/postgresql
       - postgresql_data:/var/lib/postgresql/data
       - ./northwind.sql:/docker-entrypoint-initdb.d/northwind.sql
       - ./files:/files
