@@ -224,14 +224,14 @@ Utilize o arquivo SQL fornecido, `nortwhind.sql`, para popular o seu banco de da
 
 2. **Conectar o PgAdmin** Acesse o PgAdmin pelo URL: [http://localhost:5050](http://localhost:5050), com a senha `postgres`.
 
-Configure um novo servidor no PgAdmin:
-
-    * **Aba General**:
-        * Nome: db
-    * **Aba Connection**:
-        * Nome do host: db
-        * Nome de usuário: postgres
-        * Senha: postgres Em seguida, selecione o banco de dados "northwind".
+    Configure um novo servidor no PgAdmin:
+    
+        * **Aba General**:
+            * Nome: db
+        * **Aba Connection**:
+            * Nome do host: db
+            * Nome de usuário: postgres
+            * Senha: postgres Em seguida, selecione o banco de dados "northwind".
 
 3. **Parar o Docker Compose** Pare o servidor iniciado pelo comando `docker-compose up` usando Ctrl-C e remova os contêineres com:
     
